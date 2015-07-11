@@ -1,0 +1,32 @@
+{
+  "name": "gulp-notify-linter-reporters",
+  "version": "0.0.1",
+  "description": "Reporters for linting errors using notifications",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thollingsheadesri/gulp-notify-linter-reporters.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "jscs",
+    "jshint",
+    "lint",
+    "linter",
+    "notify",
+    "notification"
+  ],
+  "author": {
+    "name": "Tim Hollingshead",
+    "email": "thollingshead@esri.com",
+    "url": "https://github.com/thollingsheadesri"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thollingsheadesri/gulp-notify-linter-reporters/issues"
+  },
+  "homepage": "https://github.com/thollingsheadesri/gulp-notify-linter-reporters#readme",
+  "dependencies": {
+    "gulp-notify": "^2.2.0"
+  }
+}
