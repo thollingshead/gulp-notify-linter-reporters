@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/thollingsheadesri/gulp-notify-linter-reporters#readme",
   "dependencies": {
-    "gulp-notify": "^2.2.0"
+    "gulp-notify": "^2.2.0",
+    "stream-combiner2": "^1.0.2"
   }
 }
