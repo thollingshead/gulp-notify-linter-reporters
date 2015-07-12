@@ -73,7 +73,7 @@ Only report errors using the specified reporter. Available reporters: `'jscs'`, 
 
 ### notifyLinterReporter(Function, *options)
 
-Use a custom reporter. See [how to write a custom reporter](writing-a-custom-reporter).
+Use a custom reporter. See [how to write a custom reporter](#writing-a-custom-reporter).
 
 ### notifyLinterReporter(*options)
 
@@ -113,7 +113,7 @@ function formatter(file, errors) {
 }
 ```
 
-Special thanks to [Mikael Brevik][mikaelbr] and his excellent [gulp-notify][]
+Special thanks to [Mikael Brevik][mikaelbr] and his excellent [gulp-notify][github-gulp-notify]
 
 [github-node-notifier]: https://github.com/mikaelbr/node-notifier
 [mikaelbr]: https://github.com/mikaelbr
