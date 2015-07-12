@@ -111,6 +111,7 @@ function formatter(file, errors) {
 		message: 'There are ' + errors.length + ' errors.'
 	};
 }
+module.exports.formatter = formatter;
 ```
 
 Special thanks to [Mikael Brevik][mikaelbr] and his excellent [gulp-notify][github-gulp-notify]
