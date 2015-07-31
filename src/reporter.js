@@ -2,8 +2,7 @@ var notify = require('gulp-notify');
 var gutil = require('gulp-util');
 var combine = require('stream-combiner2');
 var path = require('path');
-var util = require('util');
-var extend = util._extend;
+var extend = require('util')._extend;
 
 var defaults = {
 	options: {
@@ -44,7 +43,7 @@ var report = function(reporter, options) {
 
 module.exports = function(reporterName, options) {
 	var reporter = null;
-	if (util.isString(reporterName)) {
+	if (typeof reporterName === 'string' || reporterName instanceof String) {
 		try {
 			reporter = require('./reporters/' + reporterName);
 		} catch (e) {
@@ -53,7 +52,10 @@ module.exports = function(reporterName, options) {
 				message: '\'' + reporterName + '\' reporter cannot be found.'
 			});
 		}
-	} else if (util.isFunction(reporterName)) {
+	} else if (
+		typeof reporterName === 'function' ||
+		reporterName instanceof Function
+	) {
 		reporter = reporterName;
 	} else {
 		options = reporterName;
